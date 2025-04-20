@@ -35,7 +35,7 @@ if upload_file is not None:
     x = preprocess_input(x)
     
     #display prediction
-    preds = model.predic(x)
+    preds = model.predict(x)
     top_preds = decode_predictions(preds, top=3)[0]
     
     #display prediction
